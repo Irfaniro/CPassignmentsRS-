@@ -1,0 +1,11 @@
+int i, j, k = 0;
+
+for (i = n / 2; i <= n; i++) {
+    for (j = 2; j <= n; j = j * 2) {
+        k = k + n / 2;
+    }
+}
+here,  k = k + n / 2; is a constant time complexity
+for outer loop (n/2)+1 or n/2 or O(n)
+for inner loop it increases by 2^m for each i .Hence, m=log₂n ,the time complexity being O(logn)
+So, the whole code snippets time complexity is O(nlogn).
